@@ -1,0 +1,127 @@
+/* Import reset styles */
+@import url('reset.css');
+/* -------------------- */
+.wrapper.dark {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,41,41,1) 50%, rgba(37,50,60,1) 100%);
+}
+.wrapper {
+  position: relative;
+  width: 81.25rem;
+  border: 1px solid #000;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  max-height: 100%;
+}
+
+/* --------------------------- */
+.thema__wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 3.125rem;
+  left: 5.125rem;
+}
+.tmema__body {
+  border: 1px solid #000;
+  display: inline-block;
+  height: 3.125rem;
+  width: 3.125rem;
+  position: absolute;
+  top: 3.125rem;
+  left:1.125rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.8rem;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 4px 0 0 #000;
+  cursor: pointer;
+  background-color: #a6a6a6;
+}
+.thema__label.dark {
+  color: #fff;
+}
+.thema__label {
+    font-size: 1.375rem;
+}
+
+
+.tmema__body:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #687160;
+}
+
+.tmema__body:active {
+  box-shadow: 0 0 0 0 #000;
+  top: 3.25rem;
+  transition: all 0.3s ease 0s;
+  background-color: #ff3d00;
+}
+
+/* -------------------------------- */
+.calc {
+  margin:  10% auto;
+  width: 18.75rem;
+  height: 31.25rem;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.125rem;
+  box-shadow: 4px 4px 4px #4f4f4f;
+
+}
+.calc__screen {
+  height: 7.8125rem;
+  padding: 0.625rem;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 1.25rem;
+  background: rgb(226, 226, 226);
+  color: #333;
+  border-radius: 0.5rem;
+}
+.calc__screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+}
+.buttons {
+  display: grid;
+  grid-template-areas: 
+  "ac plus-minus percent division"
+  "seven eight nine multi"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equal";
+  grid-gap: 0.4375rem;
+  justify-items: center;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+.btn:active {
+  filter:brightness(90%);
+}
+.btn.bg__grey {
+  background: #a6a6a6;
+}
+.btn.bg__orange {
+  background: #ff9501;
+}
